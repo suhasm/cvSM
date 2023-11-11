@@ -1,0 +1,241 @@
+\documentclass{scrartcl}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\usepackage{xltxtra}
+\setmainfont[Mapping=tex-text]{Junicode Two Beta}
+\newfontfamily{\avestan}[Scale=0.9]{Junicode Two Beta}
+\usepackage[letterpaper,margin=1in,includehead,includefoot]{geometry}
+\usepackage[object=vectorian]{pgfornament}
+% MISC packages
+\usepackage{hanging,verbatim,fancyhdr,xcolor,calc,multirow,longtable}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{%
+pdftitle={Curriculum Vitae},%
+pdfauthor={Andrew Ollett}}
+  \definecolor{gray}{HTML}{4D4D4D}
+  \definecolor{white}{RGB}{255,255,255}
+\pagestyle{fancy}
+  \fancyhf{}
+  \cfoot{Ollett CV\ \ {\footnotesize\fontspec{Printers Ornaments One}{\textcolor{gray}e}}\ \ \thepage}
+  \renewcommand{\headrulewidth}{0pt}
+\frenchspacing
+\pagestyle{fancy}
+\begin{document}
+\setlength{\parindent}{0pt}
+
+\newcommand{\sectionline}{%
+  \begin{center}
+  {
+    \resizebox{0.8\linewidth}{2ex}
+    {{%
+    {\color{gray}\begin{tikzpicture}
+    \node  (C) at (0,0) {};
+    \node (D) at (9,0) {};
+    \path (C) to [ornament=88] (D);
+    \end{tikzpicture}}}}}%
+    \end{center}\bigskip
+  }
+
+\begin{tikzpicture}[remember picture,overlay]
+  \node [rectangle, fill=gray, anchor=north, minimum width=\paperwidth, minimum height=5cm] (box) at (current page.north){};
+  \node (ornament1) at (box.north) { \resizebox{0.7\textwidth}{1cm}{\pgfornament[height=2cm,color=white]{71}} };
+  \node [anchor=center] (name) at (box) {%
+    \fontsize{40pt}{72pt}\color{white}%
+    \textsc{andrew ollet{\kern0pt}t}
+  };
+  \node (ornament2) at (box.south) { \resizebox{0.7\textwidth}{1cm}{\pgfornament[color=white]{71}} };
+\end{tikzpicture}
+\vspace{1.5cm}
+\newcommand{\pgfdot}{\hspace{1em}\resizebox{1em}{0.75em}{\pgfornament[ydelta=+40pt,anchor=south,color=gray]{12}}\hspace{1em}}
+
+\vspace{-0.8cm}
+\begin{center} 
+{{\small 
+\begin{tabular}{ccccc}
+  \texttt{ollett@uchicago.edu} & \multirow{2}{*}{\pgfdot} & 
+  \multirow{2}{*}{+1 631/605-0753} & \multirow{2}{*}{\pgfdot} & SALC Department\\[0.5ex]
+  \texttt{andrew.ollett@gmail.com} & & & & 1130 East 59th Street Chicago, IL 60637
+\end{tabular} }} \end{center}\par\vspace{1cm}
+
+\newcommand{\secttitle}[1]{{{\Large\textbf{#1}}}\par\medskip}
+\newcommand{\sectsubtitle}[1]{{{\large\textbf{#1}}}\par\medskip}
+
+\setlength{\tabcolsep}{0pt}
+\newenvironment{entrylist}{%
+  \begin{longtable}{@{\extracolsep{\fill}}ll}
+}{%
+  \end{longtable}
+}
+\newcommand{\entry}[4]{%
+  {\addfontfeature{Color=gray} #1}&\parbox[t]{0.8\textwidth}{%
+    \textbf{#2}\hfill #3\\ #4\vspace{\parsep}%
+  }\\}
+\newcommand{\refentry}[3]{%
+  {\addfontfeature{Color=gray} #1}&\parbox[t]{0.8\textwidth}{%
+    \raggedright#2\\ {{\raggedright\small #3}}\vspace{\parsep}%
+  }\\}
+\newcommand{\singleentry}[2]{%
+  {\addfontfeature{Color=gray} #1}&\parbox[t]{0.8\textwidth}{%
+    #2\vspace{\parsep}%
+  }\\}
+\raggedright
+
+\secttitle{Employment}
+\begin{entrylist}
+\entry
+{2023–}
+{Associate Professor}
+{University of Chicago}
+{Department of South Asian Languages and Civilizations}
+\end{entrylist}
+
+\secttitle{Education}
+
+\begin{entrylist}
+\entry
+{2010--2015}
+{Doctor of Philosophy}
+{Columbia University (GSAS)}
+{Department of Middle Eastern, South Asian and African Studies\\
+Thesis title: ``Language of the Snakes: Prakrit, Sanskrit, and the Language Order of Premodern India.''\\
+\url{http://academiccommons.columbia.edu/catalog/ac:190829}.}
+\end{entrylist}\bigskip\bigskip
+
+\sectionline 
+
+\secttitle{Publications}
+(* indicates Open Access)\medskip
+
+\sectsubtitle{Published books}
+\begin{entrylist}
+\singleentry
+{2021}{\emph{Lilavai} (edition and translation)\\
+Cambridge, Mass.: Harvard University Press (Murty Classical Library of India)\\
+\url{https://www.hup.harvard.edu/catalog.php?isbn=9780674247598}\\
+ISBN 9780674247598 · 432 pages}
+\end{entrylist}
+
+\sectsubtitle{Published articles and chapters}
+\begin{entrylist}
+\refentry
+{2023}{*“A Mirror and a Handlamp”: \emph{The Way of the Poet-King} and the Afterlife of the \emph{Mirror} in the World of Kannada Literature (edited by me, with contributions by Sarah Pierce Taylor, Gil Ben-Herut, and myself)}{Chapter 3 in Yigal Bronner (ed.), \emph{A Lasting Vision: Daṇḍin’s Mirror in the World of Asian Literature}, 92–140. Delhi: Oxford University Press. DOI \href{https://doi.org/10.1093/oso/9780197642924.003.0003}{\texttt{10.1093/oso/9780197642924.003.0003}}.}
+\end{entrylist}\bigskip
+
+\sectsubtitle{Manuscripts in press}
+\begin{entrylist}
+\refentry
+{\emph{forthcoming}}{\emph{The Mirror of Ornaments} / \emph{Alaṅkāradappaṇō}.}{to be published by Unior Press, Naples}
+\end{entrylist}
+
+\sectsubtitle{Works in progress}
+\begin{entrylist}
+\refentry
+{\emph{under contract}}{\emph{The Plays of Māyurāja} (edition and translation, with Naresh Keerthi)}
+{Cambridge, Mass.: Harvard University Press (Murty Classical Library of India)}
+\end{entrylist}
+
+\sectionline
+
+\sectsubtitle{Edited issues}
+\begin{entrylist}
+\singleentry
+{2018}{Special issue on the Sātavāhanas in the \emph{Journal of the International Association of Buddhist Studies} 41 (appeared in 2019), with papers by Alice Collett, David Efurd, Andrew Ollett, Akira Shimada, Meera Visvanathan, and Monika Zin.}
+\end{entrylist}
+
+\sectsubtitle{Reviews}
+\begin{entrylist}
+\refentry
+{2018}{Review of Johannes Bronkhorst, \emph{A Śabda Reader: Language in Classical Indian Thought}}
+{\emph{Philosophy East and West} 71.2 (2021): 1–5. DOI \href{https://doi.org/10.1353/pew.2021.0036}{\texttt{10.1353/pew.2021.0036}}.}
+\end{entrylist}
+
+\sectionline
+
+
+\secttitle{Grants, Fellowships and Prizes}
+\begin{entrylist}
+\refentry
+{2021–2024}{Entanglements of the Indian Past}
+{Neubauer Collegium Faculty Research Project (with Whitney Cox, Dipesh Chakrabarty, Sarah Pierce Taylor, and Anand Venkatkrishnan)\\
+\url{https://neubauercollegium.uchicago.edu/research/entanglements-of-the-indian-past}}
+\end{entrylist} 
+
+\sectionline
+
+\secttitle{Conferences, workshops, and lectures}
+(Only unpublished papers are listed here)
+\begin{entrylist}
+\refentry
+{July 2023}{Theorizing Sarcasm}
+{Twelfth Coffee Break Conference, Groningen}
+\end{entrylist}
+
+\sectionline
+
+\secttitle{Teaching}
+
+\textbf{at the University of Chicago}:\vspace{1ex}
+
+\quad\begin{minipage}{0.9\textwidth}
+Language and reading courses:\vspace{1ex}
+
+\quad\begin{minipage}{0.9\textwidth}
+First-year Sanskrit (AY 2017–2018, AQ 2020, 2021, WQ 2022)\\[.5ex]
+Advanced Sanskrit (AQ 2017, SQ 2020, AQ 2021)\\[.5ex]
+Introduction to Prakrit (SQ 2018)\\[.5ex]
+Directed readings in Sanskrit and/or Prakrit (WQ \& SQ 2020, WQ \& SQ 2022)\\
+\end{minipage}
+\end{minipage}\vspace{-.75ex}
+
+\quad\begin{minipage}{0.9\textwidth}
+Content courses:\vspace{1ex}
+
+\quad\begin{minipage}{0.9\textwidth}
+Classical Literature of South Asia, Part 1 (AQ 2019, 2021)\\[.5ex]
+Introduction to Indian Philosophy, Part 2 (SQ 2021) [with Anand Venkatkrishnan]\\[.5ex]
+Theater of Premodern South Asia (SQ 2020)
+\end{minipage}
+\end{minipage}\medskip
+
+\quad\begin{minipage}{0.9\textwidth}
+College core:\vspace{1ex}
+
+\quad\begin{minipage}{0.9\textwidth}
+Language and the Human (WQ 2021, 2022)\\[.5ex]
+Poetry and the Human (WQ 2020)\\[.5ex]
+Readings in World Literature (WQ 2018)
+\end{minipage}
+\end{minipage}\medskip\medskip
+
+\textbf{outside the University of Chicago}:
+
+\begin{entrylist}
+\singleentry
+{July 2017}{(with Eva de Clercq) led an ‘Apabhramsha Reading Retreat’ in Castelldefels}
+\singleentry
+{Spring 2015}{Instructor, Introduction to Indian Philosophy, Columbia University}
+\singleentry
+{Fall 2012}{Instructor, Intermediate Sanskrit, Columbia University}
+\singleentry
+{Fall 2012}{Teaching Assistant, Advanced Sanskrit, Columbia University}
+%\singleentry
+%{2008–2012}{Private tutoring in Ancient Greek and Sanskrit}
+\end{entrylist} 
+
+\secttitle{Graduate students advised}
+
+\hangpara{0.15in}{1}Anil Mundra (UChicago, History of Religions, graduated Summer 2022; currently a postdoctoral fellow at Rutgers)\bigskip
+
+\secttitle{Editorship}
+
+\hangpara{0.15in}{1}Co-founder and editor, \emph{New Explorations in South Asia Research} (\href{https://nesarjournal.org}{NESAR}), ISSN 2834-3875, 2022–present.\smallskip
+
+\vfill
+\vspace{-4cm}
+\begin{tikzpicture}[remember picture,overlay]
+  \node [rectangle, fill=gray, minimum width=\paperwidth, minimum height=2.5cm] (bbox) at (current page.south){};
+  \node (ornament1) at (bbox.north) { \resizebox{0.7\textwidth}{1cm}{\pgfornament[height=2cm,color=white]{71}} };
+  \node [rectangle, fill=white, yshift=0.5cm] (textbox) at (bbox.north) { {{\small andrew ollett \pgfdot \MakeLowercase{\today} }} };
+\end{tikzpicture}
+
+\end{document}
