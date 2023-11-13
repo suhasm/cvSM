@@ -2,16 +2,16 @@
 \usepackage{polyglossia}
 \setdefaultlanguage{english}
 \usepackage{xltxtra}
-\setmainfont[Mapping=tex-text]{Junicode Two Beta}
-\newfontfamily{\avestan}[Scale=0.9]{Junicode Two Beta}
+\setmainfont[Mapping=tex-text]{Junicode}
+\newfontfamily{\avestan}[Scale=0.9]{Junicode}
 \usepackage[letterpaper,margin=1in,includehead,includefoot]{geometry}
 \usepackage[object=vectorian]{pgfornament}
 % MISC packages
 \usepackage{hanging,verbatim,fancyhdr,xcolor,calc,multirow,longtable}
 \usepackage[hidelinks]{hyperref}
-\hypersetup{%
+\hypersetup{% 
 pdftitle={Curriculum Vitae},%
-pdfauthor={Andrew Ollett}}
+pdfauthor={Suhas Mahesh}}
   \definecolor{gray}{HTML}{4D4D4D}
   \definecolor{white}{RGB}{255,255,255}
 \pagestyle{fancy}
@@ -35,26 +35,31 @@ pdfauthor={Andrew Ollett}}
     \end{tikzpicture}}}}}%
     \end{center}\bigskip
   }
+  
+% 
+\definecolor{fillcolor}{RGB}{9,97,146}
 
 \begin{tikzpicture}[remember picture,overlay]
-  \node [rectangle, fill=gray, anchor=north, minimum width=\paperwidth, minimum height=5cm] (box) at (current page.north){};
-  \node (ornament1) at (box.north) { \resizebox{0.7\textwidth}{1cm}{\pgfornament[height=2cm,color=white]{71}} };
+  % Shift the node down to create white space at the top
+  \node [rounded corners=10mm, rectangle, draw=fillcolor, fill=fillcolor, anchor=north, minimum width=\paperwidth-0.5cm, minimum height=4.5cm] (box) at ([yshift=-0.25cm]current page.north){};
+
   \node [anchor=center] (name) at (box) {%
     \fontsize{40pt}{72pt}\color{white}%
-    \textsc{andrew ollet{\kern0pt}t}
+    \textsc{Suhas Mahesh{\kern0pt}}
   };
-  \node (ornament2) at (box.south) { \resizebox{0.7\textwidth}{1cm}{\pgfornament[color=white]{71}} };
 \end{tikzpicture}
+
+
 \vspace{1.5cm}
-\newcommand{\pgfdot}{\hspace{1em}\resizebox{1em}{0.75em}{\pgfornament[ydelta=+40pt,anchor=south,color=gray]{12}}\hspace{1em}}
+\newcommand{\pgfdot}{\hspace{1em}\tikz\draw[fill=black] (0,0) circle (.5ex);\hspace{1em}}
+
 
 \vspace{-0.8cm}
 \begin{center} 
 {{\small 
 \begin{tabular}{ccccc}
-  \texttt{ollett@uchicago.edu} & \multirow{2}{*}{\pgfdot} & 
-  \multirow{2}{*}{+1 631/605-0753} & \multirow{2}{*}{\pgfdot} & SALC Department\\[0.5ex]
-  \texttt{andrew.ollett@gmail.com} & & & & 1130 East 59th Street Chicago, IL 60637
+  \multirow{2}{*}{+1-647-657-4415} & \multirow{2}{*}{\pgfdot} & 
+  \multirow{2}{*}{suhas.mahesh@utoronto.ca} & \multirow{2}{*}{\pgfdot} &  \multirow{2}{*}{www.suhasmahesh.com}
 \end{tabular} }} \end{center}\par\vspace{1cm}
 
 \newcommand{\secttitle}[1]{{{\Large\textbf{#1}}}\par\medskip}
@@ -83,28 +88,40 @@ pdfauthor={Andrew Ollett}}
 \secttitle{Employment}
 \begin{entrylist}
 \entry
-{2023–}
-{Associate Professor}
-{University of Chicago}
-{Department of South Asian Languages and Civilizations}
+{Sep 2021–}
+{Schmidt Science Fellow}
+{University of Toronto}
+{Department of Electrical \& Computer Engineering}
 \end{entrylist}
 
 \secttitle{Education}
 
 \begin{entrylist}
 \entry
-{2010--2015}
-{Doctor of Philosophy}
-{Columbia University (GSAS)}
-{Department of Middle Eastern, South Asian and African Studies\\
-Thesis title: ``Language of the Snakes: Prakrit, Sanskrit, and the Language Order of Premodern India.''\\
+{2016--2021}
+{Doctor of Philosophy in Condensed Matter Physics}
+{University of Oxford}
+{Rhodes Scholarship\\
+Thesis title: ``Optical and Electronic Properties of Novel Materials for Multijunction Perovskite Photovoltaics''\\
 \url{http://academiccommons.columbia.edu/catalog/ac:190829}.}
+
+\entry
+{2012--2016}
+{Bachelor of Science in Physics}
+{Indian Institute of Science}
+{With highest honors}
+
 \end{entrylist}\bigskip\bigskip
 
-\sectionline 
-
 \secttitle{Publications}
-(* indicates Open Access)\medskip
+
+
+
+\sectsubtitle{Published articles and chapters}
+\begin{entrylist}
+\refentry
+{2023}{*“A Mirror and a Handlamp”: \emph{The Way of the Poet-King} and the Afterlife of the \emph{Mirror} in the World of Kannada Literature (edited by me, with contributions by Sarah Pierce Taylor, Gil Ben-Herut, and myself)}{Chapter 3 in Yigal Bronner (ed.), \emph{A Lasting Vision: Daṇḍin’s Mirror in the World of Asian Literature}, 92–140. Delhi: Oxford University Press. DOI \href{https://doi.org/10.1093/oso/9780197642924.003.0003}{\texttt{10.1093/oso/9780197642924.003.0003}}.}
+\end{entrylist}\bigskip
 
 \sectsubtitle{Published books}
 \begin{entrylist}
@@ -114,12 +131,6 @@ Cambridge, Mass.: Harvard University Press (Murty Classical Library of India)\\
 \url{https://www.hup.harvard.edu/catalog.php?isbn=9780674247598}\\
 ISBN 9780674247598 · 432 pages}
 \end{entrylist}
-
-\sectsubtitle{Published articles and chapters}
-\begin{entrylist}
-\refentry
-{2023}{*“A Mirror and a Handlamp”: \emph{The Way of the Poet-King} and the Afterlife of the \emph{Mirror} in the World of Kannada Literature (edited by me, with contributions by Sarah Pierce Taylor, Gil Ben-Herut, and myself)}{Chapter 3 in Yigal Bronner (ed.), \emph{A Lasting Vision: Daṇḍin’s Mirror in the World of Asian Literature}, 92–140. Delhi: Oxford University Press. DOI \href{https://doi.org/10.1093/oso/9780197642924.003.0003}{\texttt{10.1093/oso/9780197642924.003.0003}}.}
-\end{entrylist}\bigskip
 
 \sectsubtitle{Manuscripts in press}
 \begin{entrylist}
@@ -231,11 +242,6 @@ Readings in World Literature (WQ 2018)
 \hangpara{0.15in}{1}Co-founder and editor, \emph{New Explorations in South Asia Research} (\href{https://nesarjournal.org}{NESAR}), ISSN 2834-3875, 2022–present.\smallskip
 
 \vfill
-\vspace{-4cm}
-\begin{tikzpicture}[remember picture,overlay]
-  \node [rectangle, fill=gray, minimum width=\paperwidth, minimum height=2.5cm] (bbox) at (current page.south){};
-  \node (ornament1) at (bbox.north) { \resizebox{0.7\textwidth}{1cm}{\pgfornament[height=2cm,color=white]{71}} };
-  \node [rectangle, fill=white, yshift=0.5cm] (textbox) at (bbox.north) { {{\small andrew ollett \pgfdot \MakeLowercase{\today} }} };
-\end{tikzpicture}
+
 
 \end{document}
