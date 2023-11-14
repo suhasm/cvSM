@@ -17,7 +17,7 @@ pdfauthor={Suhas Mahesh}}
   \definecolor{lightgray}{RGB}{128,128,128}
 \pagestyle{fancy}
   \fancyhf{}
-  \cfoot{Ollett CV\ \ {\footnotesize\fontspec{Printers Ornaments One}{\textcolor{gray}e}}\ \ \thepage}
+  %\cfoot{Ollett CV\ \ {\footnotesize\fontspec{Printers Ornaments One}{\textcolor{gray}e}}\ \ \thepage}
   \renewcommand{\headrulewidth}{0pt}
 \frenchspacing
 \pagestyle{fancy}
@@ -40,28 +40,33 @@ pdfauthor={Suhas Mahesh}}
 % 
 \definecolor{fillcolor}{RGB}{9,97,146}
 
+
+
 \begin{tikzpicture}[remember picture,overlay]
   % Shift the node down to create white space at the top
   \node [rounded corners=10mm, rectangle, draw=fillcolor, fill=fillcolor, anchor=north, minimum width=\paperwidth-0.5cm, minimum height=4.5cm] (box) at ([yshift=-0.25cm]current page.north){};
 
-  \node [anchor=center] (name) at (box) {%
+  \node [anchor=center] (name) at ([yshift=0.3cm]box) {%
     \fontsize{40pt}{72pt}\color{white}%
     \textsc{Suhas Mahesh{\kern0pt}}
   };
 \end{tikzpicture}
 
 
-\vspace{1.5cm}
+\vspace{0.8cm}
 \newcommand{\pgfdot}{\hspace{1em}\tikz\draw[fill=black] (0,0) circle (.5ex);\hspace{1em}}
 
 
-\vspace{-0.8cm}
+\vspace{-2.0cm}
 \begin{center} 
 {{\small 
-\begin{tabular}{ccccc}
-  \multirow{2}{*}{+1-647-657-4415} & \multirow{2}{*}{\pgfdot} & 
-  \multirow{2}{*}{suhas.mahesh@utoronto.ca} & \multirow{2}{*}{\pgfdot} &  \multirow{2}{*}{www.suhasmahesh.com}
+\begin{tabular}{ccccccc}
+  \multirow{2}{*}{\color{white}Twitter} & \multirow{2}{*}{\color{white}} & 
+  \multirow{2}{*}{\color{white}LinkedIn} & \multirow{2}{*}{\color{white}} &  \multirow{2}{*}{\color{white}suhasmahesh.com} &
+  \multirow{2}{*}{\color{white}} & \multirow{2}{*}{\color{white}suhas.mahesh@utoronto.ca}
 \end{tabular} }} \end{center}\par\vspace{1cm}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \vspace{1cm}
 
 \newcommand{\secttitle}[1]{{{\Large\textbf{#1}}}\par\medskip}
 \newcommand{\sectsubtitle}[1]{{{\large\textbf{#1}}}\par\medskip}
@@ -84,6 +89,12 @@ pdfauthor={Suhas Mahesh}}
   {\addfontfeature{Color=gray} #1}&\parbox[t]{0.8\textwidth}{%
     #2\vspace{\parsep}%
   }\\}
+\newcommand{\splitentry}[4]{%
+  {\addfontfeature{Color=gray} #1}&\parbox[t]{0.8\textwidth}{%
+    \raggedright #2\hfill #3\\ \raggedright\small #4\vspace{\parsep}%
+  }\\}
+
+
 \raggedright
 
 \secttitle{Employment}
@@ -118,143 +129,131 @@ Thesis award (2021) from MPLS Division, University of Oxford \\
 {2016}
 {Research Intern}
 {Italian Institute of Technology}
-{Carbon Nanotube based FETs \href{https://scholar.google.it/citations?user=f3suRUkAAAAJ&hl=en}{link}}
+{Inkjet Processed Semiconductors \href{https://scholar.google.it/citations?user=f3suRUkAAAAJ&hl=en}{link}}
 
 \entry
 {2015}
 {Research Intern}
 {University of Groningen, Netherlands}
 {Carbon Nanotube based FETs \href{https://scholar.google.com/citations?user=Cw22GB8AAAAJ&hl=en}{link}}
-\end{entrylist}\bigskip\bigskip
-
-\secttitle{Publications}
-
-\sectsubtitle{Published articles and chapters}
-\begin{entrylist}
-
- Please see my \href{https://scholar.google.com/citations?user=Y5ReiQsAAAAJ&hl=en}{Google Scholar}\\\\
-
-\refentry
-{2023}{*“A Mirror and a Handlamp”: \emph{The Way of the Poet-King} and the Afterlife of the \emph{Mirror} in the World of Kannada Literature (edited by me, with contributions by Sarah Pierce Taylor, Gil Ben-Herut, and myself)}{Chapter 3 in Yigal Bronner (ed.), \emph{A Lasting Vision: Daṇḍin’s Mirror in the World of Asian Literature}, 92–140. Delhi: Oxford University Press. DOI \href{https://doi.org/10.1093/oso/9780197642924.003.0003}{\texttt{10.1093/oso/9780197642924.003.0003}}.}
-\end{entrylist}\bigskip
-
-\sectsubtitle{Published books}
-\begin{entrylist}
-\singleentry
-{2021}{\emph{Lilavai} (edition and translation)\\
-Cambridge, Mass.: Harvard University Press (Murty Classical Library of India)\\
-\url{https://www.hup.harvard.edu/catalog.php?isbn=9780674247598}\\
-ISBN 9780674247598 · 432 pages}
 \end{entrylist}
 
-\sectsubtitle{Manuscripts in press}
+\secttitle{Published Articles and Book Chapters}\bigskip
+\sectsubtitle{Please see my \href{https://scholar.google.com/citations?user=Y5ReiQsAAAAJ&hl=en}{Google Scholar}}\bigskip
+
+\secttitle{Patents}
+
 \begin{entrylist}
-\refentry
-{\emph{forthcoming}}{\emph{The Mirror of Ornaments} / \emph{Alaṅkāradappaṇō}.}{to be published by Unior Press, Naples}
-\end{entrylist}
+\splitentry
+{Pending}{Snaith, H. J and Mahesh, S. \textbf{Multi-Junction Optoelectronic Device Comprising Device Interlayer}, International Application Number: PCT/GB2019/053550 \href{https://patents.google.com/patent/WO2020120991A1/}{link} }{}
 
-\sectsubtitle{Works in progress}
-\begin{entrylist}
-\refentry
-{\emph{under contract}}{\emph{The Plays of Māyurāja} (edition and translation, with Naresh Keerthi)}
-{Cambridge, Mass.: Harvard University Press (Murty Classical Library of India)}
-\end{entrylist}
-
-\sectionline
-
-\sectsubtitle{Edited issues}
-\begin{entrylist}
-\singleentry
-{2018}{Special issue on the Sātavāhanas in the \emph{Journal of the International Association of Buddhist Studies} 41 (appeared in 2019), with papers by Alice Collett, David Efurd, Andrew Ollett, Akira Shimada, Meera Visvanathan, and Monika Zin.}
-\end{entrylist}
-
-\sectsubtitle{Reviews}
-\begin{entrylist}
-\refentry
-{2018}{Review of Johannes Bronkhorst, \emph{A Śabda Reader: Language in Classical Indian Thought}}
-{\emph{Philosophy East and West} 71.2 (2021): 1–5. DOI \href{https://doi.org/10.1353/pew.2021.0036}{\texttt{10.1353/pew.2021.0036}}.}
-\end{entrylist}
-
-\sectionline
+\end{entrylist} 
 
 
 \secttitle{Grants, Fellowships and Prizes}
+
 \begin{entrylist}
 \refentry
-{2021–2024}{Entanglements of the Indian Past}
-{Neubauer Collegium Faculty Research Project (with Whitney Cox, Dipesh Chakrabarty, Sarah Pierce Taylor, and Anand Venkatkrishnan)\\
-\url{https://neubauercollegium.uchicago.edu/research/entanglements-of-the-indian-past}}
+{2024}{Catalyst Interdisciplinary Grant (\$10,000) (co-PI with Sebastian Musslick) \href{https://schmidtsciencefellows.org/news/2023-catalyst-grants-awardees/}{link} }{}
+\refentry
+{2023}{Software engineering grant (1 FTE-year), Virtual Institute for Scientific Software \href{https://www.schmidtfutures.com/our-work/virtual-institute-for-scientific-software/}{link} }{}
+\refentry
+{2023}{Acceleration Consortium Fellowship (\$110,000) \href{https://acceleration.utoronto.ca/}{link} }{}
+\refentry
+{2022}{Optoelectronics Materials Discovery Grant, Schmidt Futures (\$42,000) \href{https://www.schmidtfutures.com/}{link} }{}
+\refentry
+{2021}{Schmidt Science Fellowship (\$200,000) \href{https://schmidtsciencefellows.org/}{link} }{}
+\refentry
+{2016}{Rhodes Scholarship (\$150,000)}{}
+\refentry
+{2019}{Best Early Career Presentation, SUNRISE Solar Symposium (London)}{}
+\refentry
+{2019}{Best Early Career Presentation (\$110,000)}{}
+\refentry
+{2016}{Best Speaker Award (\$110,000)}{}
 \end{entrylist} 
 
-\sectionline
+\secttitle{Recent Invited Talks}
 
-\secttitle{Conferences, workshops, and lectures}
-(Only unpublished papers are listed here)
 \begin{entrylist}
-\refentry
-{July 2023}{Theorizing Sarcasm}
-{Twelfth Coffee Break Conference, Groningen}
+
+\splitentry
+{2023}
+{ML-guided Discovery of Two-Dimensional Perovskites (invited)}
+{Synthace}{}
+
+\splitentry
+{2023}
+{Beating the Negative Data Problem in Materials Science (invited)}
+{Rhodes Trust}{}
+
+\splitentry
+{2022}
+{Thermodynamics of Optoelectronic Devices (invited)}
+{University of Oxford}{}
+
+\splitentry
+{2021}
+{Computational Modelling of Solar Absorbers (invited)}
+{IISER Berhampur}{}
+
+\splitentry
+{2021}
+{Spatial Inhomogeneities in Perovskite Photovoltaics (invited)}
+{SUNRISE Symposium}{}
+
+\splitentry
+{2020}
+{Origin of Phase Instabilities in Perovskite Semiconductors (invited)}
+{Oxford PV}{}
+
+
+
+
 \end{entrylist}
 
-\sectionline
 
-\secttitle{Teaching}
+\secttitle{Teaching Experience}
 
-\textbf{at the University of Chicago}:\vspace{1ex}
+Semiconductor Devices, Organic Electronics , Solar Cell Thermodynamics, Condensed Matter Physics (TA), Analogue Electronics (TA). More detailed teaching history can be provided upon request.\bigskip
 
-\quad\begin{minipage}{0.9\textwidth}
-Language and reading courses:\vspace{1ex}
-
-\quad\begin{minipage}{0.9\textwidth}
-First-year Sanskrit (AY 2017–2018, AQ 2020, 2021, WQ 2022)\\[.5ex]
-Advanced Sanskrit (AQ 2017, SQ 2020, AQ 2021)\\[.5ex]
-Introduction to Prakrit (SQ 2018)\\[.5ex]
-Directed readings in Sanskrit and/or Prakrit (WQ \& SQ 2020, WQ \& SQ 2022)\\
-\end{minipage}
-\end{minipage}\vspace{-.75ex}
-
-\quad\begin{minipage}{0.9\textwidth}
-Content courses:\vspace{1ex}
-
-\quad\begin{minipage}{0.9\textwidth}
-Classical Literature of South Asia, Part 1 (AQ 2019, 2021)\\[.5ex]
-Introduction to Indian Philosophy, Part 2 (SQ 2021) [with Anand Venkatkrishnan]\\[.5ex]
-Theater of Premodern South Asia (SQ 2020)
-\end{minipage}
-\end{minipage}\medskip
-
-\quad\begin{minipage}{0.9\textwidth}
-College core:\vspace{1ex}
-
-\quad\begin{minipage}{0.9\textwidth}
-Language and the Human (WQ 2021, 2022)\\[.5ex]
-Poetry and the Human (WQ 2020)\\[.5ex]
-Readings in World Literature (WQ 2018)
-\end{minipage}
-\end{minipage}\medskip\medskip
-
-\textbf{outside the University of Chicago}:
+\secttitle{Outreach and Community}
 
 \begin{entrylist}
-\singleentry
-{July 2017}{(with Eva de Clercq) led an ‘Apabhramsha Reading Retreat’ in Castelldefels}
-\singleentry
-{Spring 2015}{Instructor, Introduction to Indian Philosophy, Columbia University}
-\singleentry
-{Fall 2012}{Instructor, Intermediate Sanskrit, Columbia University}
-\singleentry
-{Fall 2012}{Teaching Assistant, Advanced Sanskrit, Columbia University}
-%\singleentry
-%{2008–2012}{Private tutoring in Ancient Greek and Sanskrit}
-\end{entrylist} 
 
-\secttitle{Graduate students advised}
+\splitentry
+{2023}
+{Selector for Rhodes Scholarship}
+{Rhodes Trust}{}
 
-\hangpara{0.15in}{1}Anil Mundra (UChicago, History of Religions, graduated Summer 2022; currently a postdoctoral fellow at Rutgers)\bigskip
+\splitentry
+{2021}
+{Selector for the RISE Award \href{https://www.risefortheworld.org/}{link}}
+{RISE}{}
 
-\secttitle{Editorship}
+\splitentry
+{2019}
+{Conference for Undergraduate Women in Physics (co-organiser)}
+{Institute of Physics}{}
 
-\hangpara{0.15in}{1}Co-founder and editor, \emph{New Explorations in South Asia Research} (\href{https://nesarjournal.org}{NESAR}), ISSN 2834-3875, 2022–present.\smallskip
+\splitentry
+{2019}
+{Stargazing Science Festival (outreach exhibit) \href{https://web.archive.org/web/20230402133900/https://www.physics.ox.ac.uk/news/stargazing-oxfordhome}{link}}
+{University of Oxford}{}
+
+\splitentry
+{2018}
+{Oxford Science Festival (outreach exhibit) \href{https://web.archive.org/web/20230208050049/https://scienceoxford.com/events/oxfordshire-science-festival/}{link}}
+{University of Oxford}{}
+
+\splitentry
+{2014-16}
+{Head of Scholarships, Notebook Drive \href{https://web.archive.org/web/20230126231829/https://iisc.ac.in/outreach/activities/notebook-drive/}{link}}
+{Notebook Drive}{Notebook Drive is an NGO working to improve access to primary education in rural India.}
+
+\end{entrylist}
+
+
 
 \vfill
 

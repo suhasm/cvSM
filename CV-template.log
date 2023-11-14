@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.11)  13 NOV 2023 21:00
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.11)  14 NOV 2023 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1154,9 +1154,9 @@ LaTeX Info: Redefining \rmfamily on input line 24.
 LaTeX Info: Redefining \sffamily on input line 24.
 LaTeX Info: Redefining \ttfamily on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 61.
+(Font)              <7> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 61.
+(Font)              <5> on input line 63.
 
 Package fontspec Info: Font family 'Junicode(3)' created for font 'Junicode'
 (fontspec)             with options
@@ -1200,56 +1200,9 @@ g=tex-text;color=4D4D4DFF
 (fontspec)             ;"
 
 
-Overfull \hbox (30.52998pt too wide) in alignment at lines 133--139
- [] [] 
- []
-
-
-Package fontspec Info: Could not resolve font "Printers Ornaments One/BI" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "Printers Ornaments One/B" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "Printers Ornaments One/I" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: Font family 'PrintersOrnamentsOne(0)' created for font
-(fontspec)             'Printers Ornaments One' with options [].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Printers
-(fontspec)             Ornaments One/AAT"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
 [1
 
 ]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 147.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 147.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 147.
-
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-88.pgf)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-88.pgf) [2]
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-88.pgf)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfornament/vectorian/vectorian
-88.pgf)
-Underfull \hbox (badness 10000) in paragraph at lines 209--213
-
- []
-
-[3]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1320,7 +1273,7 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {newzealand/target}  =>  {english}
 >  {newzealand/variant}  =>  {newzealand}
 >  {newzealand/options}  =>  {variant=newzealand}.
- [4] (./CV-template.aux
+ [2] (./CV-template.aux
 LaTeX Info: Redefining \rmfamily on input line 27.
 LaTeX Info: Redefining \sffamily on input line 27.
 LaTeX Info: Redefining \ttfamily on input line 27.
@@ -1329,12 +1282,12 @@ Package rerunfilecheck Info: File `CV-template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27218 strings out of 476683
- 588565 string characters out of 5804046
- 1857018 words of memory out of 5000000
- 46976 multiletter control sequences out of 15000+600000
- 515762 words of font info for 89 fonts, out of 8000000 for 9000
+ 27110 strings out of 476683
+ 585728 string characters out of 5804046
+ 1861018 words of memory out of 5000000
+ 46903 multiletter control sequences out of 15000+600000
+ 512935 words of font info for 69 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,11n,106p,10630b,998s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,11n,106p,10630b,712s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on CV-template.pdf (4 pages).
+Output written on CV-template.pdf (2 pages).
