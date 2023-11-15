@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.11)  14 NOV 2023 21:19
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.11)  15 NOV 2023 14:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**CV-template.tex
-(./CV-template.tex
+**lindau_cv.tex
+(./lindau_cv.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -925,10 +925,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip90
-) (./CV-template.aux
-LaTeX Info: Redefining \rmfamily on input line 27.
-LaTeX Info: Redefining \sffamily on input line 27.
-LaTeX Info: Redefining \ttfamily on input line 27.
+) (./lindau_cv.aux
+LaTeX Info: Redefining \rmfamily on input line 30.
+LaTeX Info: Redefining \sffamily on input line 30.
+LaTeX Info: Redefining \ttfamily on input line 30.
 
 Package fontspec Info: Font family 'Junicode(2)' created for font 'Junicode'
 (fontspec)             with options
@@ -963,7 +963,7 @@ text;"
 g=tex-text;"
 
 )
-\openout1 = `CV-template.aux'.
+\openout1 = `lindau_cv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -1130,9 +1130,9 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 24.
-(./CV-template.out) (./CV-template.out)
+(./lindau_cv.out) (./lindau_cv.out)
 \@outlinefile=\write4
-\openout4 = `CV-template.out'.
+\openout4 = `lindau_cv.out'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1310,25 +1310,25 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {newzealand/target}  =>  {english}
 >  {newzealand/variant}  =>  {newzealand}
 >  {newzealand/options}  =>  {variant=newzealand}.
- [2] (./CV-template.aux
-LaTeX Info: Redefining \rmfamily on input line 27.
-LaTeX Info: Redefining \sffamily on input line 27.
-LaTeX Info: Redefining \ttfamily on input line 27.
+ [2] (./lindau_cv.aux
+LaTeX Info: Redefining \rmfamily on input line 30.
+LaTeX Info: Redefining \sffamily on input line 30.
+LaTeX Info: Redefining \ttfamily on input line 30.
 )
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 5.12pt have occurred.
 
-Package rerunfilecheck Info: File `CV-template.out' has not changed.
+Package rerunfilecheck Info: File `lindau_cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  27204 strings out of 476683
- 587804 string characters out of 5804046
- 1865018 words of memory out of 5000000
+ 587770 string characters out of 5804046
+ 1864018 words of memory out of 5000000
  46976 multiletter control sequences out of 15000+600000
  515764 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,11n,106p,10630b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,11n,106p,10628b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on CV-template.pdf (2 pages).
+Output written on lindau_cv.pdf (2 pages).
