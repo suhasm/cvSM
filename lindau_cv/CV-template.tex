@@ -24,6 +24,9 @@ pdfauthor={Suhas Mahesh}}
 \begin{document}
 \setlength{\parindent}{0pt}
 
+\newcommand{\whitelink}[2]{\href{#1}{\color{white}#2}}
+\newcommand{\bluelink}[2]{\href{#1}{\color{blue}#2}}
+
 \newcommand{\sectionline}{%
   \begin{center}
   {
@@ -65,7 +68,7 @@ pdfauthor={Suhas Mahesh}}
   
   % New node for the image
   \node [anchor=south west, opacity=0.5] at ([yshift=-1cm, xshift=-3cm]box.south west) {
-    \includegraphics[width=6cm]{img/om.png} % Adjust the width as necessary
+    \includegraphics[width=6cm]{img/organicmol.png} % Adjust the width as necessary
   };
   
     % New node for the image
@@ -97,9 +100,9 @@ pdfauthor={Suhas Mahesh}}
 \begin{center} 
 {{\small 
 \begin{tabular}{ccccccc}
-  \multirow{2}{*}{\color{white}Twitter} & \multirow{2}{*}{\color{white}} & 
-  \multirow{2}{*}{\color{white}LinkedIn} & \multirow{2}{*}{\color{white}} &  \multirow{2}{*}{\color{white}suhasmahesh.com} &
-  \multirow{2}{*}{\color{white}} & \multirow{2}{*}{\color{white}suhas.mahesh@utoronto.ca}
+  \multirow{2}{*}{\color{white}\whitelink{https://twitter.com/suhasm}{Twitter}} & \multirow{2}{*}{\color{white}} & 
+  \multirow{2}{*}{\color{white}\whitelink{https://www.linkedin.com/in/suhas-mahesh-0b366a71/}{LinkedIn}} & \multirow{2}{*}{\color{white}} &  \multirow{2}{*}{\color{white}\whitelink{http://www.suhasmahesh.com}{suhasmahesh.com}} &
+  \multirow{2}{*}{\color{white}} & \multirow{2}{*}{\color{white}\whitelink{mailto:suhas.mahesh@utoronto.ca}{suhas.mahesh@utoronto.ca}}
 \end{tabular} }} \end{center}\par\vspace{1cm}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \vspace{1cm}
@@ -175,7 +178,7 @@ Thesis award (2021) from MPLS Division, University of Oxford \\
 \end{entrylist}
 
 \secttitle{Published Articles and Book Chapters}\bigskip
-\sectsubtitle{Please see my \href{https://scholar.google.com/citations?user=Y5ReiQsAAAAJ&hl=en}{Google Scholar}} A partial list of publications is provided at the end of this CV. \bigskip
+\sectsubtitle{Please see my \bluelink{https://scholar.google.com/citations?user=Y5ReiQsAAAAJ&hl=en}{Google Scholar}} A partial list of publications is provided at the end of this CV. \bigskip
 
 \secttitle{Patents}
 
@@ -294,19 +297,14 @@ Semiconductor Devices, Organic Electronics , Solar Cell Thermodynamics, Condense
 \begin{entrylist}
 
 \splitentry
-{2023}
-{Selector for Rhodes Scholarship}
-{Rhodes Trust}{}
+{2023–}
+{Co-creator of ambuda.org \href{https://www.ambuda.org}{link}}
+{}{Breakthrough digital library of Sanskrit with intelligent ML-based tools}
 
 \splitentry
-{2021}
-{Selector for the RISE Award \href{https://www.risefortheworld.org/}{link}}
-{RISE}{}
-
-\splitentry
-{2019}
-{Conference for Undergraduate Women in Physics (co-organiser)}
-{Institute of Physics}{}
+{2024}
+{\emph{How to Love in Sanskrit} (HarperCollins; co-authored with Anusha Rao)}
+{}{Compendium of 3000 years of Sanskrit wisdom on love, in English translation}
 
 \end{entrylist}
 
