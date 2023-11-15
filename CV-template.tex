@@ -4,7 +4,7 @@
 \usepackage{xltxtra}
 \setmainfont[Mapping=tex-text]{Junicode}
 \newfontfamily{\avestan}[Scale=0.9]{Junicode}
-\usepackage[letterpaper,margin=1in,includehead,includefoot]{geometry}
+\usepackage[letterpaper,margin=1in,includehead]{geometry}
 \usepackage[object=vectorian]{pgfornament}
 % MISC packages
 \usepackage{hanging,verbatim,fancyhdr,xcolor,calc,multirow,longtable}
@@ -43,13 +43,49 @@ pdfauthor={Suhas Mahesh}}
 
 
 \begin{tikzpicture}[remember picture,overlay]
-  % Shift the node down to create white space at the top
-  \node [rounded corners=10mm, rectangle, draw=fillcolor, fill=fillcolor, anchor=north, minimum width=\paperwidth-0.5cm, minimum height=4.5cm] (box) at ([yshift=-0.25cm]current page.north){};
 
+% The clip x-shift has been set manually. You need to re-adjust. To adjust, replace \clip by \draw (with same arguments) so you can see the box.
+\clip [rounded corners=10mm] ([xshift =-10.55cm,yshift=-0.25cm]current page.north) rectangle ++(\paperwidth-0.5cm,-4.5cm);
+
+  % Existing nodes
+  \node [rounded corners=10mm, rectangle, draw=fillcolor, fill=fillcolor, anchor=north, minimum width=\paperwidth-0.5cm, minimum height=4.5cm] (box) at ([yshift=-0.25cm]current page.north){};
+  
+ 
   \node [anchor=center] (name) at ([yshift=0.3cm]box) {%
     \fontsize{40pt}{72pt}\color{white}%
     \textsc{Suhas Mahesh{\kern0pt}}
   };
+	
+  % New node for Schrodinger's Equation
+  \node [rotate=45, anchor=south east, opacity=0.2] at ([yshift=5cm, xshift=-2cm]box.south east) {
+    \color{white} % Set the color of the equation
+    \fontsize{30pt}{36pt}\selectfont % Set the font size
+    $i\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r},t) = \hat{H}\Psi(\mathbf{r},t)$
+  };
+  
+  % New node for the image
+  \node [anchor=south west, opacity=0.5] at ([yshift=-1cm, xshift=-3cm]box.south west) {
+    \includegraphics[width=6cm]{img/om.png} % Adjust the width as necessary
+  };
+  
+    % New node for the image
+  \node [anchor=south west, opacity=0.5] at ([yshift=-3cm, xshift=17cm]box.south west) {
+    \includegraphics[width=6cm]{img/crystal.png} % Adjust the width as necessary
+  };
+  
+      % New node for the image
+  \node [anchor=south west, opacity=0.1] at ([yshift=-2cm, xshift=5cm]box.south west) {
+    \includegraphics[width=6cm]{img/nn.png} % Adjust the width as necessary
+  };
+  
+  \node [align=left, text width=10cm, rotate=20, anchor=south east, opacity=0.2] at ([yshift=5cm, xshift=-9cm]box.south east) {
+   \color{white}
+    \texttt{from pymatgen.core import *\\
+            from pymatgen.io.vasp.sets import *\\
+            from pymatgen import Lattice, Structure, Molecule\\
+            from pymatgen.io.vasp.sets import MPRelaxSet}
+  };
+  
 \end{tikzpicture}
 
 
@@ -139,7 +175,7 @@ Thesis award (2021) from MPLS Division, University of Oxford \\
 \end{entrylist}
 
 \secttitle{Published Articles and Book Chapters}\bigskip
-\sectsubtitle{Please see my \href{https://scholar.google.com/citations?user=Y5ReiQsAAAAJ&hl=en}{Google Scholar}}\bigskip
+\sectsubtitle{Please see my \href{https://scholar.google.com/citations?user=Y5ReiQsAAAAJ&hl=en}{Google Scholar}} A partial list of publications is provided at the end of this CV. \bigskip
 
 \secttitle{Patents}
 
@@ -252,6 +288,28 @@ Semiconductor Devices, Organic Electronics , Solar Cell Thermodynamics, Condense
 {Notebook Drive}{Notebook Drive is an NGO working to improve access to primary education in rural India.}
 
 \end{entrylist}
+
+\secttitle{Other Interests}
+
+\begin{entrylist}
+
+\splitentry
+{2023}
+{Selector for Rhodes Scholarship}
+{Rhodes Trust}{}
+
+\splitentry
+{2021}
+{Selector for the RISE Award \href{https://www.risefortheworld.org/}{link}}
+{RISE}{}
+
+\splitentry
+{2019}
+{Conference for Undergraduate Women in Physics (co-organiser)}
+{Institute of Physics}{}
+
+\end{entrylist}
+
 
 
 
